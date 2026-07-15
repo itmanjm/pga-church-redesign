@@ -1,0 +1,432 @@
+{
+  "projectId": "3991602272829960499",
+  "sessionId": "9651787568403200726",
+  "outputComponents": [
+    {
+      "designSystem": {
+        "name": "assets/77067ef799d941f8b599f8e3f53493cc",
+        "designSystem": {
+          "displayName": "Portmore Gospel Assembly",
+          "styleGuidelines": "## Brand & Style\n\nThe design system is built on a foundation of reverence, community, and modern Caribbean elegance. It balances the weight of tradition with a forward-looking, professional aesthetic. The visual language evokes a sense of sanctuary\u2014bright, airy, and grounded.\n\nThe style is **Modern Corporate with a Warm Aesthetic**, characterized by:\n- **Clarity and Light:** Utilizing expansive white space and light cream backgrounds to simulate the bright, natural light of a Caribbean morning.\n- **Dignified Accents:** Using gold as a highlight to signify the sacred and the celebratory.\n- **Architectural Stability:** Employing strong typographic hierarchies and structured layouts that reflect the physical presence of the assembly.\n- **Community Focus:** Visuals should prioritize human connection and architectural detail, moving away from cluttered interfaces toward an editorial, intentional experience.\n\n## Layout & Spacing\n\nThe layout philosophy follows a **Structured Fixed Grid** for desktop and a **Fluid Stack** for mobile.\n\n- **The 8px Grid:** All margins and paddings must be multiples of 8px to ensure a consistent visual cadence.\n- **Desktop:** A 12-column grid with a 1200px max-width. Gaps should be kept wide (24px to 32px) to prevent the UI from feeling cramped.\n- **Margins:** Desktop views should utilize large side margins (minimum 80px) to focus the user's eye on the central content.\n- **Mobile:** A 4-column fluid grid with 16px side margins. \n- **Content Flow:** Use \"z-pattern\" layouts for ministry highlights and community updates to keep the experience engaging.\n\n## Elevation & Depth\n\nTo maintain a \"Warm Caribbean\" atmosphere, depth is created through soft, ambient shadows rather than harsh lines.\n\n- **Surface Layers:** Use very subtle tonal shifts in the background (light cream to pure white) to separate sections of content.\n- **Soft Shadows:** Elevation is communicated through high-blur, low-opacity shadows (e.g., `box-shadow: 0 10px 30px rgba(26, 44, 94, 0.05)`). This creates a \"lifted\" feel that mimics cards sitting on a surface.\n- **Interactive States:** Buttons and interactive cards should slightly increase their shadow spread on hover, providing a tactile, responsive feel that invites engagement.\n\n## Components\n\n### Buttons\n- **Primary:** Solid Navy Blue background with White text. Used for main actions like \"Join a Ministry\" or \"Sermon Archive.\"\n- **Call-to-Action:** Solid Gold background with Navy Blue text. Reserved for high-priority items like \"Giving\" or \"New Here?\"\n- **Ghost:** Navy Blue outline with transparent background for secondary navigation.\n\n### Cards\n- Cards are the primary container for events and ministries. They should feature a white background, the standard 8px corner radius, and an ambient shadow. \n- Imagery within cards should always be top-aligned.\n\n### Input Fields\n- Fields use a light cream background and a 1px border in a lightened navy. \n- Focus states should use a 2px Gold border to clearly indicate active participation.\n\n### Lists & Navigation\n- Top navigation should be clean and spacious. \n- Vertical lists for ministry directories should use subtle dividers in a very light grey-blue to maintain a tidy appearance without adding visual noise.\n\n### Photography\n- Always use bright, high-key photography. Images should focus on the warmth of the congregation and the clean lines of the assembly's architecture.",
+          "theme": {
+            "colorMode": "LIGHT",
+            "font": "PLAYFAIR_DISPLAY",
+            "roundness": "ROUND_EIGHT",
+            "customColor": "#1a2c5e",
+            "headlineFont": "PLAYFAIR_DISPLAY",
+            "bodyFont": "WORK_SANS",
+            "labelFont": "WORK_SANS",
+            "namedColors": {
+              "background": "#fbf9f8",
+              "error": "#ba1a1a",
+              "error_container": "#ffdad6",
+              "inverse_on_surface": "#f2f0f0",
+              "inverse_primary": "#b4c5ff",
+              "inverse_surface": "#303030",
+              "on_background": "#1b1c1c",
+              "on_error": "#ffffff",
+              "on_error_container": "#93000a",
+              "on_primary": "#ffffff",
+              "on_primary_container": "#8495cd",
+              "on_primary_fixed": "#02174a",
+              "on_primary_fixed_variant": "#344477",
+              "on_secondary": "#ffffff",
+              "on_secondary_container": "#715300",
+              "on_secondary_fixed": "#261a00",
+              "on_secondary_fixed_variant": "#5c4300",
+              "on_surface": "#1b1c1c",
+              "on_surface_variant": "#45464f",
+              "on_tertiary": "#ffffff",
+              "on_tertiary_container": "#c6895b",
+              "on_tertiary_fixed": "#301400",
+              "on_tertiary_fixed_variant": "#693b14",
+              "outline": "#757680",
+              "outline_variant": "#c5c6d0",
+              "primary": "#001649",
+              "primary_container": "#1a2c5e",
+              "primary_fixed": "#dbe1ff",
+              "primary_fixed_dim": "#b4c5ff",
+              "secondary": "#795900",
+              "secondary_container": "#ffc641",
+              "secondary_fixed": "#ffdfa0",
+              "secondary_fixed_dim": "#f6be39",
+              "surface": "#fbf9f8",
+              "surface_bright": "#fbf9f8",
+              "surface_container": "#efeded",
+              "surface_container_high": "#eae8e7",
+              "surface_container_highest": "#e4e2e2",
+              "surface_container_low": "#f5f3f3",
+              "surface_container_lowest": "#ffffff",
+              "surface_dim": "#dbd9d9",
+              "surface_tint": "#4c5c91",
+              "surface_variant": "#e4e2e2",
+              "tertiary": "#2d1300",
+              "tertiary_container": "#4c2400",
+              "tertiary_fixed": "#ffdcc5",
+              "tertiary_fixed_dim": "#fcb886"
+            },
+            "designMd": "---\nname: Portmore Gospel Assembly\ncolors:\n  surface: '#fbf9f8'\n  surface-dim: '#dbd9d9'\n  surface-bright: '#fbf9f8'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f5f3f3'\n  surface-container: '#efeded'\n  surface-container-high: '#eae8e7'\n  surface-container-highest: '#e4e2e2'\n  on-surface: '#1b1c1c'\n  on-surface-variant: '#45464f'\n  inverse-surface: '#303030'\n  inverse-on-surface: '#f2f0f0'\n  outline: '#757680'\n  outline-variant: '#c5c6d0'\n  surface-tint: '#4c5c91'\n  primary: '#001649'\n  on-primary: '#ffffff'\n  primary-container: '#1a2c5e'\n  on-primary-container: '#8495cd'\n  inverse-primary: '#b4c5ff'\n  secondary: '#795900'\n  on-secondary: '#ffffff'\n  secondary-container: '#ffc641'\n  on-secondary-container: '#715300'\n  tertiary: '#2d1300'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#4c2400'\n  on-tertiary-container: '#c6895b'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#dbe1ff'\n  primary-fixed-dim: '#b4c5ff'\n  on-primary-fixed: '#02174a'\n  on-primary-fixed-variant: '#344477'\n  secondary-fixed: '#ffdfa0'\n  secondary-fixed-dim: '#f6be39'\n  on-secondary-fixed: '#261a00'\n  on-secondary-fixed-variant: '#5c4300'\n  tertiary-fixed: '#ffdcc5'\n  tertiary-fixed-dim: '#fcb886'\n  on-tertiary-fixed: '#301400'\n  on-tertiary-fixed-variant: '#693b14'\n  background: '#fbf9f8'\n  on-background: '#1b1c1c'\n  surface-variant: '#e4e2e2'\ntypography:\n  display-lg:\n    fontFamily: Playfair Display\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: '1.1'\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Playfair Display\n    fontSize: 36px\n    fontWeight: '700'\n    lineHeight: '1.2'\n  headline-lg:\n    fontFamily: Playfair Display\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: '1.3'\n  headline-md:\n    fontFamily: Playfair Display\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: '1.4'\n  body-lg:\n    fontFamily: Work Sans\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  body-md:\n    fontFamily: Work Sans\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  label-md:\n    fontFamily: Work Sans\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: '1.2'\n    letterSpacing: 0.05em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  base: 8px\n  xs: 4px\n  sm: 12px\n  md: 24px\n  lg: 48px\n  xl: 80px\n  container-max: 1200px\n---\n\n## Brand & Style\n\nThe design system is built on a foundation of reverence, community, and modern Caribbean elegance. It balances the weight of tradition with a forward-looking, professional aesthetic. The visual language evokes a sense of sanctuary\u2014bright, airy, and grounded.\n\nThe style is **Modern Corporate with a Warm Aesthetic**, characterized by:\n- **Clarity and Light:** Utilizing expansive white space and light cream backgrounds to simulate the bright, natural light of a Caribbean morning.\n- **Dignified Accents:** Using gold as a highlight to signify the sacred and the celebratory.\n- **Architectural Stability:** Employing strong typographic hierarchies and structured layouts that reflect the physical presence of the assembly.\n- **Community Focus:** Visuals should prioritize human connection and architectural detail, moving away from cluttered interfaces toward an editorial, intentional experience.\n\n## Colors\n\nThe palette is designed to be authoritative yet inviting.\n\n- **Primary (Navy Blue):** Represents depth, stability, and the heritage of the assembly. Used for headers, primary navigation, and foundational UI elements.\n- **Secondary (Refined Gold):** Symbolizes excellence and divine light. Reserved for high-impact calls to action, active states, and ornamental highlights.\n- **Background (Cream/White):** A soft, off-white (#fcfaf5) is preferred over pure white to reduce eye strain and add a touch of warmth.\n- **Neutral Scale:** A range of greys derived from the primary navy to maintain color harmony across borders, text, and icons.\n\n## Typography\n\nThis design system uses a serif-for-headlines and sans-serif-for-body pairing to create a \"New Traditionalist\" feel.\n\n- **Playfair Display:** Used for all high-level headings. Its high contrast and elegant serifs provide a sense of trustworthiness and literary importance.\n- **Work Sans:** Selected for its exceptional readability and neutral, professional character. It ensures that scripture readings and announcements are accessible to all ages.\n- **Hierarchy:** Maintain generous vertical rhythm. Headings should feel distinct and given plenty of \"breathing room\" to emphasize the importance of the message.\n\n## Layout & Spacing\n\nThe layout philosophy follows a **Structured Fixed Grid** for desktop and a **Fluid Stack** for mobile.\n\n- **The 8px Grid:** All margins and paddings must be multiples of 8px to ensure a consistent visual cadence.\n- **Desktop:** A 12-column grid with a 1200px max-width. Gaps should be kept wide (24px to 32px) to prevent the UI from feeling cramped.\n- **Margins:** Desktop views should utilize large side margins (minimum 80px) to focus the user's eye on the central content.\n- **Mobile:** A 4-column fluid grid with 16px side margins. \n- **Content Flow:** Use \"z-pattern\" layouts for ministry highlights and community updates to keep the experience engaging.\n\n## Elevation & Depth\n\nTo maintain a \"Warm Caribbean\" atmosphere, depth is created through soft, ambient shadows rather than harsh lines.\n\n- **Surface Layers:** Use very subtle tonal shifts in the background (light cream to pure white) to separate sections of content.\n- **Soft Shadows:** Elevation is communicated through high-blur, low-opacity shadows (e.g., `box-shadow: 0 10px 30px rgba(26, 44, 94, 0.05)`). This creates a \"lifted\" feel that mimics cards sitting on a surface.\n- **Interactive States:** Buttons and interactive cards should slightly increase their shadow spread on hover, providing a tactile, responsive feel that invites engagement.\n\n## Shapes\n\nThe shape language is defined by a \"Subtle Round\" (8px) logic. \n\n- **Corner Radius:** A consistent 0.5rem (8px) radius is applied to buttons, input fields, and cards. This softens the professional navy blue and makes the interface feel more approachable and communal.\n- **Iconography:** Icons should feature rounded caps and corners to match the UI elements. Avoid razor-sharp geometric icons.\n- **Images:** Photography should be housed in containers with the same 8px radius or be entirely full-bleed to emphasize the architectural openness.\n\n## Components\n\n### Buttons\n- **Primary:** Solid Navy Blue background with White text. Used for main actions like \"Join a Ministry\" or \"Sermon Archive.\"\n- **Call-to-Action:** Solid Gold background with Navy Blue text. Reserved for high-priority items like \"Giving\" or \"New Here?\"\n- **Ghost:** Navy Blue outline with transparent background for secondary navigation.\n\n### Cards\n- Cards are the primary container for events and ministries. They should feature a white background, the standard 8px corner radius, and an ambient shadow. \n- Imagery within cards should always be top-aligned.\n\n### Input Fields\n- Fields use a light cream background and a 1px border in a lightened navy. \n- Focus states should use a 2px Gold border to clearly indicate active participation.\n\n### Lists & Navigation\n- Top navigation should be clean and spacious. \n- Vertical lists for ministry directories should use subtle dividers in a very light grey-blue to maintain a tidy appearance without adding visual noise.\n\n### Photography\n- Always use bright, high-key photography. Images should focus on the warmth of the congregation and the clean lines of the assembly's architecture.",
+            "colorVariant": "FIDELITY",
+            "overridePrimaryColor": "#1a2c5e",
+            "overrideSecondaryColor": "#d4a017",
+            "overrideNeutralColor": "#4a4a4a",
+            "spacingScale": 2,
+            "typography": {
+              "body-lg": {
+                "fontFamily": "Work Sans",
+                "fontSize": "18px",
+                "fontWeight": "400",
+                "lineHeight": "1.6"
+              },
+              "body-md": {
+                "fontFamily": "Work Sans",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "lineHeight": "1.6"
+              },
+              "display-lg": {
+                "fontFamily": "Playfair Display",
+                "fontSize": "48px",
+                "fontWeight": "700",
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em"
+              },
+              "display-lg-mobile": {
+                "fontFamily": "Playfair Display",
+                "fontSize": "36px",
+                "fontWeight": "700",
+                "lineHeight": "1.2"
+              },
+              "headline-lg": {
+                "fontFamily": "Playfair Display",
+                "fontSize": "32px",
+                "fontWeight": "600",
+                "lineHeight": "1.3"
+              },
+              "headline-md": {
+                "fontFamily": "Playfair Display",
+                "fontSize": "24px",
+                "fontWeight": "600",
+                "lineHeight": "1.4"
+              },
+              "label-md": {
+                "fontFamily": "Work Sans",
+                "fontSize": "14px",
+                "fontWeight": "600",
+                "lineHeight": "1.2",
+                "letterSpacing": "0.05em"
+              }
+            },
+            "spacing": {
+              "base": "8px",
+              "container-max": "1200px",
+              "lg": "48px",
+              "md": "24px",
+              "sm": "12px",
+              "xl": "80px",
+              "xs": "4px"
+            },
+            "headlineFontFamily": "Playfair Display",
+            "bodyFontFamily": "Work Sans",
+            "labelFontFamily": "Work Sans"
+          }
+        },
+        "version": "1"
+      }
+    },
+    {
+      "design": {
+        "screens": [
+          {
+            "screenshot": {
+              "name": "projects/3991602272829960499/files/f5acdba016f84a89885a565eabf5ed62",
+              "downloadUrl": "https://lh3.googleusercontent.com/aida/AP1WRLue_J1qpFY5ijT5ivY87niP94acwabzihI49tsteq3PmR0KdFYfrYBacftqNt-9Wpb2wUnzxqDpTkOlPi19e9fMtYmIC9aUzdmCRn2f7SBgND0H8s4HOnpnhvwIVm6lPEaKbo0ASs5Zf85KJeGQsW1Z--u8_CXQTRP36uZB2WMR-z2lO5mePpSrxnO3oqEO6Gu_G5x4um3ZGxSr3kdjBrcJROtdZdO32JlyC1wLunxKoIUPUb1cu7CgN0kM"
+            },
+            "htmlCode": {
+              "name": "projects/3991602272829960499/files/fcb04c15b3b24e1f8b61f8165091afa1",
+              "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzhlMjJlOTIzNzc2YjRmZTk4ZmVlZWVhZDQ3ZmMyNDE4EgwSCBC0v5qEuIBAGAGSASMKCnByb2plY3RfaWQSFUITMzk5MTYwMjI3MjgyOTk2MDQ5OQ&filename=&opi=96797242",
+              "mimeType": "text/html"
+            },
+            "id": "9f20619cb4d44b31825bf4c1d65f4041",
+            "generatedBy": "figaro_agent",
+            "width": "780",
+            "height": "4728",
+            "title": "PGA Homepage",
+            "prompt": "A welcoming and high-fidelity mobile homepage hero section for Portmore Gospel Assembly. \n\nKey elements:\n- Hero section featuring a stunning, bright architectural photo of the church (inspired by {{DATA:IMAGE:IMAGE_14}}).\n- Heading: \"Welcome Home\" in an elegant serif font.\n- Subheading: \"A community committed to God and each other.\"\n- Primary Action: A prominent \"Plan Your Visit\" button in gold.\n- Secondary Action: A \"Watch Live\" button with a play icon, styled for high visibility.\n- Include the TopAppBar at the top and a brief \"Service Times\" section immediately following the hero to anchor the page.\n- Use the navy blue (#1a2c5e) and gold (#d4a017) palette established in the design system.",
+            "name": "projects/3991602272829960499/screens/9f20619cb4d44b31825bf4c1d65f4041",
+            "theme": {
+              "colorMode": "LIGHT",
+              "font": "PLAYFAIR_DISPLAY",
+              "roundness": "ROUND_EIGHT",
+              "customColor": "#1a2c5e",
+              "headlineFont": "PLAYFAIR_DISPLAY",
+              "bodyFont": "WORK_SANS",
+              "labelFont": "WORK_SANS",
+              "namedColors": {
+                "background": "#fbf9f8",
+                "error": "#ba1a1a",
+                "error_container": "#ffdad6",
+                "inverse_on_surface": "#f2f0f0",
+                "inverse_primary": "#b4c5ff",
+                "inverse_surface": "#303030",
+                "on_background": "#1b1c1c",
+                "on_error": "#ffffff",
+                "on_error_container": "#93000a",
+                "on_primary": "#ffffff",
+                "on_primary_container": "#8495cd",
+                "on_primary_fixed": "#02174a",
+                "on_primary_fixed_variant": "#344477",
+                "on_secondary": "#ffffff",
+                "on_secondary_container": "#715300",
+                "on_secondary_fixed": "#261a00",
+                "on_secondary_fixed_variant": "#5c4300",
+                "on_surface": "#1b1c1c",
+                "on_surface_variant": "#45464f",
+                "on_tertiary": "#ffffff",
+                "on_tertiary_container": "#c6895b",
+                "on_tertiary_fixed": "#301400",
+                "on_tertiary_fixed_variant": "#693b14",
+                "outline": "#757680",
+                "outline_variant": "#c5c6d0",
+                "primary": "#001649",
+                "primary_container": "#1a2c5e",
+                "primary_fixed": "#dbe1ff",
+                "primary_fixed_dim": "#b4c5ff",
+                "secondary": "#795900",
+                "secondary_container": "#ffc641",
+                "secondary_fixed": "#ffdfa0",
+                "secondary_fixed_dim": "#f6be39",
+                "surface": "#fbf9f8",
+                "surface_bright": "#fbf9f8",
+                "surface_container": "#efeded",
+                "surface_container_high": "#eae8e7",
+                "surface_container_highest": "#e4e2e2",
+                "surface_container_low": "#f5f3f3",
+                "surface_container_lowest": "#ffffff",
+                "surface_dim": "#dbd9d9",
+                "surface_tint": "#4c5c91",
+                "surface_variant": "#e4e2e2",
+                "tertiary": "#2d1300",
+                "tertiary_container": "#4c2400",
+                "tertiary_fixed": "#ffdcc5",
+                "tertiary_fixed_dim": "#fcb886"
+              },
+              "colorVariant": "FIDELITY",
+              "overridePrimaryColor": "#1a2c5e",
+              "overrideSecondaryColor": "#d4a017",
+              "overrideNeutralColor": "#4a4a4a",
+              "spacingScale": 2,
+              "typography": {
+                "body-lg": {
+                  "fontFamily": "Work Sans",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "1.6"
+                },
+                "body-md": {
+                  "fontFamily": "Work Sans",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "1.6"
+                },
+                "display-lg": {
+                  "fontFamily": "Playfair Display",
+                  "fontSize": "48px",
+                  "fontWeight": "700",
+                  "lineHeight": "1.1",
+                  "letterSpacing": "-0.02em"
+                },
+                "display-lg-mobile": {
+                  "fontFamily": "Playfair Display",
+                  "fontSize": "36px",
+                  "fontWeight": "700",
+                  "lineHeight": "1.2"
+                },
+                "headline-lg": {
+                  "fontFamily": "Playfair Display",
+                  "fontSize": "32px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.3"
+                },
+                "headline-md": {
+                  "fontFamily": "Playfair Display",
+                  "fontSize": "24px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.4"
+                },
+                "label-md": {
+                  "fontFamily": "Work Sans",
+                  "fontSize": "14px",
+                  "fontWeight": "600",
+                  "lineHeight": "1.2",
+                  "letterSpacing": "0.05em"
+                }
+              },
+              "spacing": {
+                "base": "8px",
+                "container-max": "1200px",
+                "lg": "48px",
+                "md": "24px",
+                "sm": "12px",
+                "xl": "80px",
+                "xs": "4px"
+              },
+              "headlineFontFamily": "Playfair Display",
+              "bodyFontFamily": "Work Sans",
+              "labelFontFamily": "Work Sans"
+            },
+            "deviceType": "MOBILE",
+            "screenType": "DESIGN",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "designSystem": {
+              "name": "assets/77067ef799d941f8b599f8e3f53493cc",
+              "designSystem": {
+                "displayName": "Portmore Gospel Assembly",
+                "styleGuidelines": "## Brand & Style\n\nThe design system is built on a foundation of reverence, community, and modern Caribbean elegance. It balances the weight of tradition with a forward-looking, professional aesthetic. The visual language evokes a sense of sanctuary\u2014bright, airy, and grounded.\n\nThe style is **Modern Corporate with a Warm Aesthetic**, characterized by:\n- **Clarity and Light:** Utilizing expansive white space and light cream backgrounds to simulate the bright, natural light of a Caribbean morning.\n- **Dignified Accents:** Using gold as a highlight to signify the sacred and the celebratory.\n- **Architectural Stability:** Employing strong typographic hierarchies and structured layouts that reflect the physical presence of the assembly.\n- **Community Focus:** Visuals should prioritize human connection and architectural detail, moving away from cluttered interfaces toward an editorial, intentional experience.\n\n## Layout & Spacing\n\nThe layout philosophy follows a **Structured Fixed Grid** for desktop and a **Fluid Stack** for mobile.\n\n- **The 8px Grid:** All margins and paddings must be multiples of 8px to ensure a consistent visual cadence.\n- **Desktop:** A 12-column grid with a 1200px max-width. Gaps should be kept wide (24px to 32px) to prevent the UI from feeling cramped.\n- **Margins:** Desktop views should utilize large side margins (minimum 80px) to focus the user's eye on the central content.\n- **Mobile:** A 4-column fluid grid with 16px side margins. \n- **Content Flow:** Use \"z-pattern\" layouts for ministry highlights and community updates to keep the experience engaging.\n\n## Elevation & Depth\n\nTo maintain a \"Warm Caribbean\" atmosphere, depth is created through soft, ambient shadows rather than harsh lines.\n\n- **Surface Layers:** Use very subtle tonal shifts in the background (light cream to pure white) to separate sections of content.\n- **Soft Shadows:** Elevation is communicated through high-blur, low-opacity shadows (e.g., `box-shadow: 0 10px 30px rgba(26, 44, 94, 0.05)`). This creates a \"lifted\" feel that mimics cards sitting on a surface.\n- **Interactive States:** Buttons and interactive cards should slightly increase their shadow spread on hover, providing a tactile, responsive feel that invites engagement.\n\n## Components\n\n### Buttons\n- **Primary:** Solid Navy Blue background with White text. Used for main actions like \"Join a Ministry\" or \"Sermon Archive.\"\n- **Call-to-Action:** Solid Gold background with Navy Blue text. Reserved for high-priority items like \"Giving\" or \"New Here?\"\n- **Ghost:** Navy Blue outline with transparent background for secondary navigation.\n\n### Cards\n- Cards are the primary container for events and ministries. They should feature a white background, the standard 8px corner radius, and an ambient shadow. \n- Imagery within cards should always be top-aligned.\n\n### Input Fields\n- Fields use a light cream background and a 1px border in a lightened navy. \n- Focus states should use a 2px Gold border to clearly indicate active participation.\n\n### Lists & Navigation\n- Top navigation should be clean and spacious. \n- Vertical lists for ministry directories should use subtle dividers in a very light grey-blue to maintain a tidy appearance without adding visual noise.\n\n### Photography\n- Always use bright, high-key photography. Images should focus on the warmth of the congregation and the clean lines of the assembly's architecture.",
+                "theme": {
+                  "colorMode": "LIGHT",
+                  "font": "PLAYFAIR_DISPLAY",
+                  "roundness": "ROUND_EIGHT",
+                  "customColor": "#1a2c5e",
+                  "headlineFont": "PLAYFAIR_DISPLAY",
+                  "bodyFont": "WORK_SANS",
+                  "labelFont": "WORK_SANS",
+                  "namedColors": {
+                    "background": "#fbf9f8",
+                    "error": "#ba1a1a",
+                    "error_container": "#ffdad6",
+                    "inverse_on_surface": "#f2f0f0",
+                    "inverse_primary": "#b4c5ff",
+                    "inverse_surface": "#303030",
+                    "on_background": "#1b1c1c",
+                    "on_error": "#ffffff",
+                    "on_error_container": "#93000a",
+                    "on_primary": "#ffffff",
+                    "on_primary_container": "#8495cd",
+                    "on_primary_fixed": "#02174a",
+                    "on_primary_fixed_variant": "#344477",
+                    "on_secondary": "#ffffff",
+                    "on_secondary_container": "#715300",
+                    "on_secondary_fixed": "#261a00",
+                    "on_secondary_fixed_variant": "#5c4300",
+                    "on_surface": "#1b1c1c",
+                    "on_surface_variant": "#45464f",
+                    "on_tertiary": "#ffffff",
+                    "on_tertiary_container": "#c6895b",
+                    "on_tertiary_fixed": "#301400",
+                    "on_tertiary_fixed_variant": "#693b14",
+                    "outline": "#757680",
+                    "outline_variant": "#c5c6d0",
+                    "primary": "#001649",
+                    "primary_container": "#1a2c5e",
+                    "primary_fixed": "#dbe1ff",
+                    "primary_fixed_dim": "#b4c5ff",
+                    "secondary": "#795900",
+                    "secondary_container": "#ffc641",
+                    "secondary_fixed": "#ffdfa0",
+                    "secondary_fixed_dim": "#f6be39",
+                    "surface": "#fbf9f8",
+                    "surface_bright": "#fbf9f8",
+                    "surface_container": "#efeded",
+                    "surface_container_high": "#eae8e7",
+                    "surface_container_highest": "#e4e2e2",
+                    "surface_container_low": "#f5f3f3",
+                    "surface_container_lowest": "#ffffff",
+                    "surface_dim": "#dbd9d9",
+                    "surface_tint": "#4c5c91",
+                    "surface_variant": "#e4e2e2",
+                    "tertiary": "#2d1300",
+                    "tertiary_container": "#4c2400",
+                    "tertiary_fixed": "#ffdcc5",
+                    "tertiary_fixed_dim": "#fcb886"
+                  },
+                  "designMd": "---\nname: Portmore Gospel Assembly\ncolors:\n  surface: '#fbf9f8'\n  surface-dim: '#dbd9d9'\n  surface-bright: '#fbf9f8'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f5f3f3'\n  surface-container: '#efeded'\n  surface-container-high: '#eae8e7'\n  surface-container-highest: '#e4e2e2'\n  on-surface: '#1b1c1c'\n  on-surface-variant: '#45464f'\n  inverse-surface: '#303030'\n  inverse-on-surface: '#f2f0f0'\n  outline: '#757680'\n  outline-variant: '#c5c6d0'\n  surface-tint: '#4c5c91'\n  primary: '#001649'\n  on-primary: '#ffffff'\n  primary-container: '#1a2c5e'\n  on-primary-container: '#8495cd'\n  inverse-primary: '#b4c5ff'\n  secondary: '#795900'\n  on-secondary: '#ffffff'\n  secondary-container: '#ffc641'\n  on-secondary-container: '#715300'\n  tertiary: '#2d1300'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#4c2400'\n  on-tertiary-container: '#c6895b'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#dbe1ff'\n  primary-fixed-dim: '#b4c5ff'\n  on-primary-fixed: '#02174a'\n  on-primary-fixed-variant: '#344477'\n  secondary-fixed: '#ffdfa0'\n  secondary-fixed-dim: '#f6be39'\n  on-secondary-fixed: '#261a00'\n  on-secondary-fixed-variant: '#5c4300'\n  tertiary-fixed: '#ffdcc5'\n  tertiary-fixed-dim: '#fcb886'\n  on-tertiary-fixed: '#301400'\n  on-tertiary-fixed-variant: '#693b14'\n  background: '#fbf9f8'\n  on-background: '#1b1c1c'\n  surface-variant: '#e4e2e2'\ntypography:\n  display-lg:\n    fontFamily: Playfair Display\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: '1.1'\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Playfair Display\n    fontSize: 36px\n    fontWeight: '700'\n    lineHeight: '1.2'\n  headline-lg:\n    fontFamily: Playfair Display\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: '1.3'\n  headline-md:\n    fontFamily: Playfair Display\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: '1.4'\n  body-lg:\n    fontFamily: Work Sans\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  body-md:\n    fontFamily: Work Sans\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  label-md:\n    fontFamily: Work Sans\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: '1.2'\n    letterSpacing: 0.05em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  base: 8px\n  xs: 4px\n  sm: 12px\n  md: 24px\n  lg: 48px\n  xl: 80px\n  container-max: 1200px\n---\n\n## Brand & Style\n\nThe design system is built on a foundation of reverence, community, and modern Caribbean elegance. It balances the weight of tradition with a forward-looking, professional aesthetic. The visual language evokes a sense of sanctuary\u2014bright, airy, and grounded.\n\nThe style is **Modern Corporate with a Warm Aesthetic**, characterized by:\n- **Clarity and Light:** Utilizing expansive white space and light cream backgrounds to simulate the bright, natural light of a Caribbean morning.\n- **Dignified Accents:** Using gold as a highlight to signify the sacred and the celebratory.\n- **Architectural Stability:** Employing strong typographic hierarchies and structured layouts that reflect the physical presence of the assembly.\n- **Community Focus:** Visuals should prioritize human connection and architectural detail, moving away from cluttered interfaces toward an editorial, intentional experience.\n\n## Colors\n\nThe palette is designed to be authoritative yet inviting.\n\n- **Primary (Navy Blue):** Represents depth, stability, and the heritage of the assembly. Used for headers, primary navigation, and foundational UI elements.\n- **Secondary (Refined Gold):** Symbolizes excellence and divine light. Reserved for high-impact calls to action, active states, and ornamental highlights.\n- **Background (Cream/White):** A soft, off-white (#fcfaf5) is preferred over pure white to reduce eye strain and add a touch of warmth.\n- **Neutral Scale:** A range of greys derived from the primary navy to maintain color harmony across borders, text, and icons.\n\n## Typography\n\nThis design system uses a serif-for-headlines and sans-serif-for-body pairing to create a \"New Traditionalist\" feel.\n\n- **Playfair Display:** Used for all high-level headings. Its high contrast and elegant serifs provide a sense of trustworthiness and literary importance.\n- **Work Sans:** Selected for its exceptional readability and neutral, professional character. It ensures that scripture readings and announcements are accessible to all ages.\n- **Hierarchy:** Maintain generous vertical rhythm. Headings should feel distinct and given plenty of \"breathing room\" to emphasize the importance of the message.\n\n## Layout & Spacing\n\nThe layout philosophy follows a **Structured Fixed Grid** for desktop and a **Fluid Stack** for mobile.\n\n- **The 8px Grid:** All margins and paddings must be multiples of 8px to ensure a consistent visual cadence.\n- **Desktop:** A 12-column grid with a 1200px max-width. Gaps should be kept wide (24px to 32px) to prevent the UI from feeling cramped.\n- **Margins:** Desktop views should utilize large side margins (minimum 80px) to focus the user's eye on the central content.\n- **Mobile:** A 4-column fluid grid with 16px side margins. \n- **Content Flow:** Use \"z-pattern\" layouts for ministry highlights and community updates to keep the experience engaging.\n\n## Elevation & Depth\n\nTo maintain a \"Warm Caribbean\" atmosphere, depth is created through soft, ambient shadows rather than harsh lines.\n\n- **Surface Layers:** Use very subtle tonal shifts in the background (light cream to pure white) to separate sections of content.\n- **Soft Shadows:** Elevation is communicated through high-blur, low-opacity shadows (e.g., `box-shadow: 0 10px 30px rgba(26, 44, 94, 0.05)`). This creates a \"lifted\" feel that mimics cards sitting on a surface.\n- **Interactive States:** Buttons and interactive cards should slightly increase their shadow spread on hover, providing a tactile, responsive feel that invites engagement.\n\n## Shapes\n\nThe shape language is defined by a \"Subtle Round\" (8px) logic. \n\n- **Corner Radius:** A consistent 0.5rem (8px) radius is applied to buttons, input fields, and cards. This softens the professional navy blue and makes the interface feel more approachable and communal.\n- **Iconography:** Icons should feature rounded caps and corners to match the UI elements. Avoid razor-sharp geometric icons.\n- **Images:** Photography should be housed in containers with the same 8px radius or be entirely full-bleed to emphasize the architectural openness.\n\n## Components\n\n### Buttons\n- **Primary:** Solid Navy Blue background with White text. Used for main actions like \"Join a Ministry\" or \"Sermon Archive.\"\n- **Call-to-Action:** Solid Gold background with Navy Blue text. Reserved for high-priority items like \"Giving\" or \"New Here?\"\n- **Ghost:** Navy Blue outline with transparent background for secondary navigation.\n\n### Cards\n- Cards are the primary container for events and ministries. They should feature a white background, the standard 8px corner radius, and an ambient shadow. \n- Imagery within cards should always be top-aligned.\n\n### Input Fields\n- Fields use a light cream background and a 1px border in a lightened navy. \n- Focus states should use a 2px Gold border to clearly indicate active participation.\n\n### Lists & Navigation\n- Top navigation should be clean and spacious. \n- Vertical lists for ministry directories should use subtle dividers in a very light grey-blue to maintain a tidy appearance without adding visual noise.\n\n### Photography\n- Always use bright, high-key photography. Images should focus on the warmth of the congregation and the clean lines of the assembly's architecture.",
+                  "colorVariant": "FIDELITY",
+                  "overridePrimaryColor": "#1a2c5e",
+                  "overrideSecondaryColor": "#d4a017",
+                  "overrideNeutralColor": "#4a4a4a",
+                  "spacingScale": 2,
+                  "typography": {
+                    "body-lg": {
+                      "fontFamily": "Work Sans",
+                      "fontSize": "18px",
+                      "fontWeight": "400",
+                      "lineHeight": "1.6"
+                    },
+                    "body-md": {
+                      "fontFamily": "Work Sans",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "1.6"
+                    },
+                    "display-lg": {
+                      "fontFamily": "Playfair Display",
+                      "fontSize": "48px",
+                      "fontWeight": "700",
+                      "lineHeight": "1.1",
+                      "letterSpacing": "-0.02em"
+                    },
+                    "display-lg-mobile": {
+                      "fontFamily": "Playfair Display",
+                      "fontSize": "36px",
+                      "fontWeight": "700",
+                      "lineHeight": "1.2"
+                    },
+                    "headline-lg": {
+                      "fontFamily": "Playfair Display",
+                      "fontSize": "32px",
+                      "fontWeight": "600",
+                      "lineHeight": "1.3"
+                    },
+                    "headline-md": {
+                      "fontFamily": "Playfair Display",
+                      "fontSize": "24px",
+                      "fontWeight": "600",
+                      "lineHeight": "1.4"
+                    },
+                    "label-md": {
+                      "fontFamily": "Work Sans",
+                      "fontSize": "14px",
+                      "fontWeight": "600",
+                      "lineHeight": "1.2",
+                      "letterSpacing": "0.05em"
+                    }
+                  },
+                  "spacing": {
+                    "base": "8px",
+                    "container-max": "1200px",
+                    "lg": "48px",
+                    "md": "24px",
+                    "sm": "12px",
+                    "xl": "80px",
+                    "xs": "4px"
+                  },
+                  "headlineFontFamily": "Playfair Display",
+                  "bodyFontFamily": "Work Sans",
+                  "labelFontFamily": "Work Sans"
+                }
+              },
+              "version": "1"
+            }
+          }
+        ],
+        "theme": {}
+      }
+    },
+    {
+      "text": "I've designed the homepage hero section for Portmore Gospel Assembly, focusing on a balance of reverence and modern hospitality.\n\n**Design Rationale:**\n- **Visual Identity:** I used a deep navy blue and refined gold palette to evoke a sense of tradition and excellence. 'Playfair Display' was chosen for the headings to provide a timeless, trustworthy feel.\n- **Hero Composition:** The \"Welcome Home\" message is paired with a high-quality architectural background of the church, creating an immediate sense of place and belonging.\n- **Clear Call-to-Actions:** The primary \"Plan Your Visit\" button uses the gold accent to stand out against the navy, while the \"Watch Live\" action ensures the virtual sanctuary is easily accessible.\n\nHow does this look for the initial impression? I can expand the rest of the page with sections for sermons, ministries, or upcoming events."
+    },
+    {
+      "suggestion": "Add a Recent Sermons section"
+    },
+    {
+      "suggestion": "Add a Connect With Our Ministries section"
+    },
+    {
+      "suggestion": "Show the Plan Your Visit details"
+    }
+  ]
+}
