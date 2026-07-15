@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Portmore Gospel Assembly — A community committed to God and each other in Worship, Edification, Evangelization and Spiritual Warfare. Portmore, Jamaica."/>
+<title>Portmore Gospel Assembly - Welcome Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f0f4ff",
+                    "inverse-surface": "#303030",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1b1c1c",
+                    "surface-variant": "#e4e2e2",
+                    "on-error-container": "#93000a",
+                    "outline": "#757680",
+                    "on-tertiary-fixed-variant": "#693b14",
+                    "primary": "#193c9d",
+                    "tertiary": "#2d1300",
+                    "on-secondary-fixed-variant": "#5c4300",
+                    "on-background": "#1b1c1c",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#4c5c91",
+                    "tertiary-fixed-dim": "#fcb886",
+                    "surface-bright": "#ffffff",
+                    "on-secondary-container": "#715300",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#4c2400",
+                    "on-primary-container": "#8495cd",
+                    "background": "#ffffff",
+                    "on-primary-fixed": "#02174a",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e4e2e2",
+                    "surface-container-low": "#f7f9fc",
+                    "on-primary-fixed-variant": "#344477",
+                    "secondary-fixed-dim": "#f6be39",
+                    "tertiary-fixed": "#ffdcc5",
+                    "secondary-fixed": "#fff4d6",
+                    "on-surface-variant": "#45464f",
+                    "secondary": "#795900",
+                    "outline-variant": "#c5c6d0",
+                    "primary-fixed": "#e8eeff",
+                    "inverse-primary": "#b4c5ff",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#142c7a",
+                    "surface": "#ffffff",
+                    "on-tertiary-container": "#c6895b",
+                    "inverse-on-surface": "#f2f0f0",
+                    "secondary-container": "#ffc641",
+                    "on-tertiary-fixed": "#301400",
+                    "surface-container-high": "#eef2f9",
+                    "surface-dim": "#dbd9d9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "48px",
+                    "xl": "80px",
+                    "sm": "12px",
+                    "base": "8px",
+                    "xs": "4px",
+                    "md": "24px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Work Sans"],
+                    "label-md": ["Work Sans"],
+                    "headline-lg": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-lg": ["Work Sans"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-bg {
+            background-image: url('/church-building.jpg');
+            background-size: cover;
+            background-position: center;
+            animation: kenBurns 20s ease-in-out infinite alternate;
+        }
+        @keyframes kenBurns {
+            0% { transform: scale(1) translateY(0); }
+            100% { transform: scale(1.1) translateY(-2%); }
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(25, 60, 157, 0.2) 0%, rgba(25, 60, 157, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%);
+        }
+        .active-nav { border-bottom: 2px solid #ffc641; color: #193c9d; font-weight: bold; }
+        .section-accent { display: inline-block; width: 60px; height: 4px; background: #ffc641; border-radius: 2px; margin-bottom: 16px; }
+        .gold-text { color: #795900; }
+        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .scroll-reveal.visible { opacity: 1; transform: translateY(0); }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .sermon-card:hover .play-overlay { opacity: 1; }
+        .play-overlay { opacity: 0.7; transition: opacity 0.3s; }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #ffc641; transition: width 0.3s; }
+        .nav-link:hover::after { width: 100%; }
+        .event-card { transition: transform 0.3s, box-shadow 0.3s; }
+        .event-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(25, 60, 157, 0.12); }
+        .countdown-badge { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in-up { animation: fadeInUp 0.8s ease-out; }
+        .fade-in-up-delay { animation: fadeInUp 0.8s ease-out 0.3s both; }
+        .fade-in-up-delay-2 { animation: fadeInUp 0.8s ease-out 0.6s both; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+
+<!-- ============ NAVBAR ============ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-bright/95 backdrop-blur-md shadow-sm h-20 transition-all duration-300" id="navbar">
+<div class="flex justify-between items-center px-6 md:px-8 w-full max-w-container-max mx-auto h-full">
+<div class="flex items-center gap-4">
+<button class="p-2 text-primary hover:bg-surface-container-low transition-colors duration-300 rounded-full md:hidden" id="mobileMenuBtn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a href="/" class="flex items-center gap-sm">
+<!-- PGA Crest Logo -->
+<svg width="40" height="40" viewBox="0 0 40 40" class="flex-shrink-0">
+<circle cx="20" cy="20" r="19" fill="#193c9d" stroke="#ffc641" stroke-width="2"/>
+<path d="M12 14 L12 28 M12 14 Q16 12 20 14 Q24 16 28 14 L28 28" stroke="#ffc641" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<text x="20" y="35" text-anchor="middle" font-size="6" fill="#ffc641" font-weight="bold" font-family="Work Sans">PGA</text>
+</svg>
+<h1 class="font-headline-md text-headline-md text-primary uppercase tracking-wider hidden sm:block">Portmore Gospel Assembly</h1>
+<span class="font-headline-md text-headline-md text-primary sm:hidden">PGA</span>
+</a>
+</div>
+<nav class="hidden md:flex items-center gap-md">
+<a class="font-label-md text-label-md active-nav" href="/">HOME</a>
+<a class="font-label-md text-label-md text-on-surface-variant nav-link hover:text-primary transition-colors" href="#about">ABOUT</a>
+<a class="font-label-md text-label-md text-on-surface-variant nav-link hover:text-primary transition-colors" href="#sermons">SERMONS</a>
+<a class="font-label-md text-label-md text-on-surface-variant nav-link hover:text-primary transition-colors" href="#meetings">MEETINGS</a>
+<a class="font-label-md text-label-md text-on-surface-variant nav-link hover:text-primary transition-colors" href="#events">EVENTS</a>
+<a class="font-label-md text-label-md text-on-surface-variant nav-link hover:text-primary transition-colors" href="#contact">CONTACT</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="https://www.youtube.com/@PortmoreGospelAssembly" target="_blank" class="bg-secondary-container text-primary font-label-md text-label-md px-md py-2 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-300 flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="hidden sm:inline">WATCH LIVE</span>
+</a>
+</div>
+</div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="fixed inset-0 z-50 hidden" id="mobileMenu">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-sm" id="mobileMenuOverlay"></div>
+<div class="absolute top-0 left-0 w-72 h-full bg-surface-bright shadow-xl flex flex-col p-md gap-sm">
+<div class="flex justify-between items-center mb-lg">
+<div class="flex items-center gap-sm">
+<svg width="32" height="32" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#193c9d" stroke="#ffc641" stroke-width="2"/><path d="M12 14 L12 28 M12 14 Q16 12 20 14 Q24 16 28 14 L28 28" stroke="#ffc641" stroke-width="2.5" fill="none" stroke-linecap="round"/><text x="20" y="35" text-anchor="middle" font-size="6" fill="#ffc641" font-weight="bold" font-family="Work Sans">PGA</text></svg>
+<span class="font-headline-md text-primary">PGA</span>
+</div>
+<button class="p-2 text-on-surface-variant" id="closeMobileMenu"><span class="material-symbols-outlined">close</span></button>
+</div>
+<a href="/" class="py-sm px-md rounded-lg hover:bg-surface-container-low font-label-md active-nav">HOME</a>
+<a href="#about" class="py-sm px-md rounded-lg hover:bg-surface-container-low font-label-md text-on-surface-variant">ABOUT</a>
+<a href="#sermons" class="py-sm px-md rounded-lg hover:bg-surface-container-low font-label-md text-on-surface-variant">SERMONS</a>
+<a href="#meetings" class="py-sm px-md rounded-lg hover:bg-surface-container-low font-label-md text-on-surface-variant">MEETINGS</a>
+<a href="#events" class="py-sm px-md rounded-lg hover:bg-surface-container-low font-label-md text-on-surface-variant">EVENTS</a>
+<a href="#contact" class="py-sm px-md rounded-lg hover:bg-surface-container-low font-label-md text-on-surface-variant">CONTACT</a>
+<a href="https://www.youtube.com/@PortmoreGospelAssembly" target="_blank" class="mt-md bg-secondary-container text-primary font-label-md px-md py-3 rounded-lg text-center">WATCH LIVE</a>
+</div>
+</div>
+
+<main class="pt-20">
+
+<!-- ============ HERO SECTION ============ -->
+<section class="relative h-[600px] md:h-[680px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0 hero-bg"></div>
+<div class="absolute inset-0 z-0 hero-overlay"></div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-6 md:px-xl text-center">
+<span class="section-accent fade-in-up"></span>
+<h2 class="font-display-lg md:font-display-lg text-display-lg-mobile md:text-display-lg text-white drop-shadow-lg mb-md fade-in-up">Welcome Home</h2>
+<p class="font-body-lg text-body-lg text-white drop-shadow-md max-w-2xl mx-auto mb-lg fade-in-up-delay">A community committed to God and each other, standing as a beacon of faith in the heart of Portmore.</p>
+<div class="flex flex-col sm:flex-row gap-sm justify-center fade-in-up-delay-2">
+<a href="#meetings" class="bg-secondary-container text-primary font-label-md text-label-md px-lg py-4 rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">calendar_month</span>
+PLAN YOUR VISIT
+</a>
+<a href="https://www.youtube.com/@PortmoreGospelAssembly" target="_blank" class="bg-primary text-white font-label-md text-label-md px-lg py-4 rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+WATCH LIVE
+</a>
+</div>
+</div>
+<!-- Next Service Countdown Badge -->
+<div class="absolute bottom-6 right-6 z-10 countdown-badge shadow-lg rounded-xl px-md py-sm border border-outline-variant hidden md:flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Next Service</p>
+<p class="font-body-md text-body-md text-on-surface font-semibold">Sunday 7:30 AM</p>
+</div>
+</div>
+</section>
+
+<!-- ============ QUICK INFO BAR ============ -->
+<section class="bg-surface-container-low py-md border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-6 md:px-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="flex items-center justify-center gap-sm">
+<span class="material-symbols-outlined text-primary" style="font-size: 32px;">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Service Times</p>
+<p class="font-body-md text-body-md text-on-surface font-semibold">Sunday 7:30 AM</p>
+</div>
+</div>
+<div class="flex items-center justify-center gap-sm">
+<span class="material-symbols-outlined text-primary" style="font-size: 32px;">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Location</p>
+<p class="font-body-md text-body-md text-on-surface font-semibold">Portmore, Jamaica</p>
+</div>
+</div>
+<div class="flex items-center justify-center gap-sm">
+<span class="material-symbols-outlined text-primary" style="font-size: 32px;">live_tv</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Watch Online</p>
+<a href="https://www.youtube.com/@PortmoreGospelAssembly" class="font-body-md text-body-md text-primary font-semibold hover:underline">YouTube Live Stream</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ ABOUT SECTION ============ -->
+<section id="about" class="bg-surface-container-lowest py-xl scroll-reveal">
+<div class="max-w-container-max mx-auto px-6 md:px-xl">
+<div class="grid md:grid-cols-12 gap-lg items-center">
+<div class="md:col-span-5 relative">
+<div class="rounded-xl overflow-hidden shadow-lg aspect-[4/3] bg-cover bg-center" style="background-image: url('/mens-fellowship.jpg')"></div>
+<div class="absolute -bottom-md -right-md bg-secondary-container text-primary p-md rounded-xl shadow-xl hidden md:block">
+<p class="font-display-lg text-display-lg">400+</p>
+<p class="font-label-md text-label-md">MEMBERS</p>
+</div>
+</div>
+<div class="md:col-span-7">
+<span class="section-accent"></span>
+<p class="font-label-md text-label-md text-primary uppercase tracking-wider mb-xs">About Us</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">A Community of Faith</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-md">Portmore Gospel Assembly is a community of persons committed to God and each other in Worship, Edification, Evangelization and Spiritual Warfare, for the purpose of reconciling and discipling the nations unto Christlikeness.</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Led by Pastor Donovan D. Cole since 1994, we are an Assemblies of God Affiliated church serving the Portmore community for over 30 years.</p>
+<div class="grid grid-cols-3 gap-sm">
+<div class="flex flex-col items-center gap-xs p-sm bg-surface rounded-lg border border-outline-variant">
+<span class="material-symbols-outlined text-primary">accessible</span>
+<p class="font-label-md text-label-md text-on-surface-variant text-center">Wheelchair Accessible</p>
+</div>
+<div class="flex flex-col items-center gap-xs p-sm bg-surface rounded-lg border border-outline-variant">
+<span class="material-symbols-outlined text-primary">local_parking</span>
+<p class="font-label-md text-label-md text-on-surface-variant text-center">Secure Parking</p>
+</div>
+<div class="flex flex-col items-center gap-xs p-sm bg-surface rounded-lg border border-outline-variant">
+<span class="material-symbols-outlined text-primary">directions_bus</span>
+<p class="font-label-md text-label-md text-on-surface-variant text-center">JUTC Routes</p>
+</div>
+</div>
+<a href="#meetings" class="inline-flex items-center gap-2 mt-lg text-primary font-label-md nav-link">
+EXPLORE OUR MINISTRIES
+<span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ SERMONS / MEDIA SECTION ============ -->
+<section id="sermons" class="bg-surface py-xl scroll-reveal">
+<div class="max-w-container-max mx-auto px-6 md:px-xl">
+<span class="section-accent"></span>
+<p class="font-label-md text-label-md text-primary uppercase tracking-wider mb-xs">Media</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-lg">Recent Sermons</h2>
+
+<!-- Featured Sermon (Latest) -->
+<a href="https://www.youtube.com/watch?v=YCJ6T2X6CL4" target="_blank" class="sermon-card group block bg-surface-bright rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 mb-lg">
+<div class="grid md:grid-cols-2">
+<div class="relative aspect-video bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/YCJ6T2X6CL4/hqdefault.jpg')">
+<div class="absolute inset-0 play-overlay bg-black/30 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" style="font-size: 32px; font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-sm py-1 rounded-full">LATEST</div>
+</div>
+<div class="p-lg flex flex-col justify-center">
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-xs">Bible Study</p>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Bible Study — June 16, 2026</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">Speaker: Rev Conrad Reid</p>
+<p class="font-body-md text-body-md text-on-surface-variant">3 weeks ago • 1 hr 2 min</p>
+</div>
+</div>
+</a>
+
+<!-- Sermon Grid -->
+<div class="grid md:grid-cols-3 gap-md mb-lg">
+
+<a href="https://www.youtube.com/watch?v=duFl8_5fOF0" target="_blank" class="sermon-card group bg-surface-bright rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative aspect-video bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/duFl8_5fOF0/hqdefault.jpg')">
+<div class="absolute inset-0 play-overlay bg-black/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-size: 48px;">play_circle</span>
+</div>
+<div class="absolute top-2 left-2 bg-primary text-white text-xs font-bold px-sm py-1 rounded">SERIES</div>
+</div>
+<div class="p-md">
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider">Rule #7</p>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-xs">Finish Well</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Rev Conrad Reid • Feb 22, 2026</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=PfzVJrioRb4" target="_blank" class="sermon-card group bg-surface-bright rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative aspect-video bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/PfzVJrioRb4/hqdefault.jpg')">
+<div class="absolute inset-0 play-overlay bg-black/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-size: 48px;">play_circle</span>
+</div>
+<div class="absolute top-2 left-2 bg-secondary-container text-primary text-xs font-bold px-sm py-1 rounded">POPULAR</div>
+</div>
+<div class="p-md">
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider">Rule #3</p>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-xs">Trust God's Timing</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Rev Conrad Reid • Jan 25, 2026</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=zisW3Slr1W0" target="_blank" class="sermon-card group bg-surface-bright rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative aspect-video bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/zisW3Slr1W0/hqdefault.jpg')">
+<div class="absolute inset-0 play-overlay bg-black/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-size: 48px;">play_circle</span>
+</div>
+</div>
+<div class="p-md">
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider">Rule #5</p>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-xs">Avoid the Trap of Loving Money</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Elder Clinton Floyd • Feb 8, 2026</p>
+</div>
+</a>
+
+</div>
+
+<!-- Series Archive -->
+<div class="bg-primary-fixed rounded-xl p-lg mb-lg">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-sm">
+<div>
+<p class="font-label-md text-label-md text-primary uppercase tracking-wider">Sermon Series</p>
+<h3 class="font-headline-md text-headline-md text-on-surface">Rules for Life</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">A 7-part series on practical Christian living, taught by Rev Conrad Reid and guest speakers.</p>
+</div>
+<a href="https://www.youtube.com/@PortmoreGospelAssembly/videos" target="_blank" class="bg-primary text-white font-label-md px-lg py-3 rounded-lg hover:shadow-lg transition-all whitespace-nowrap flex items-center gap-2">
+VIEW ALL ON YOUTUBE
+<span class="material-symbols-outlined" style="font-size: 18px;">open_in_new</span>
+</a>
+</div>
+</div>
+
+<!-- Audio Sermons Link -->
+<div class="flex flex-col sm:flex-row gap-md">
+<a href="https://soundcloud.com/user-524924797" target="_blank" class="flex-1 bg-surface-bright rounded-xl shadow-sm p-md flex items-center gap-md hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-lg bg-[#ff5500]/10 flex items-center justify-center flex-shrink-0">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="#ff5500"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5v-6l5 3-5 3z"/></svg>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Audio Sermons</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Listen on SoundCloud</p>
+</div>
+</a>
+<a href="https://feeds.soundcloud.com/users/soundcloud:users:361430807/sounds.rss" target="_blank" class="flex-1 bg-surface-bright rounded-xl shadow-sm p-md flex items-center gap-md hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-lg bg-[#ffa500]/10 flex items-center justify-center flex-shrink-0">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="#ffa500"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20A2.18 2.18 0 0 1 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">RSS Feed</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Subscribe in your podcast app</p>
+</div>
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- ============ UPCOMING EVENTS SECTION ============ -->
+<section id="events" class="bg-surface-container-lowest py-xl scroll-reveal">
+<div class="max-w-container-max mx-auto px-6 md:px-xl">
+<span class="section-accent"></span>
+<p class="font-label-md text-label-md text-primary uppercase tracking-wider mb-xs">What's Coming Up</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-lg">Upcoming Events</h2>
+<div class="grid md:grid-cols-3 gap-md">
+
+<div class="event-card bg-surface-bright rounded-xl shadow-sm overflow-hidden border-l-4 border-primary">
+<div class="p-md">
+<div class="flex items-start justify-between mb-sm">
+<div class="bg-primary-fixed rounded-lg px-sm py-xs text-center">
+<p class="font-label-md text-label-md text-primary font-bold">JUL</p>
+<p class="font-headline-lg text-headline-lg text-primary leading-none">13</p>
+</div>
+<span class="bg-secondary-container/20 text-secondary text-xs font-bold px-sm py-1 rounded-full">SUNDAY</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Communion Sunday</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">3rd Sunday communion during worship service.</p>
+<div class="flex items-center gap-xs mt-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">access_time</span>
+<span class="font-body-md text-body-md">7:30 AM</span>
+</div>
+<div class="flex items-center gap-xs mt-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">location_on</span>
+<span class="font-body-md text-body-md">In-Person & Online</span>
+</div>
+</div>
+</div>
+
+<div class="event-card bg-surface-bright rounded-xl shadow-sm overflow-hidden border-l-4 border-secondary">
+<div class="p-md">
+<div class="flex items-start justify-between mb-sm">
+<div class="bg-secondary-fixed rounded-lg px-sm py-xs text-center">
+<p class="font-label-md text-label-md text-secondary font-bold">JUL</p>
+<p class="font-headline-lg text-headline-lg text-secondary leading-none">15</p>
+</div>
+<span class="bg-primary/10 text-primary text-xs font-bold px-sm py-1 rounded-full">TUESDAY</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Prayer Night</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">1st Tuesday prayer night — dedicated prayer and intercession.</p>
+<div class="flex items-center gap-xs mt-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">access_time</span>
+<span class="font-body-md text-body-md">7:30 PM</span>
+</div>
+<div class="flex items-center gap-xs mt-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">videocam</span>
+<span class="font-body-md text-body-md">Online Only</span>
+</div>
+</div>
+</div>
+
+<div class="event-card bg-surface-bright rounded-xl shadow-sm overflow-hidden border-l-4 border-primary">
+<div class="p-md">
+<div class="flex items-start justify-between mb-sm">
+<div class="bg-primary-fixed rounded-lg px-sm py-xs text-center">
+<p class="font-label-md text-label-md text-primary font-bold">JUL</p>
+<p class="font-headline-lg text-headline-lg text-primary leading-none">18</p>
+</div>
+<span class="bg-secondary-container/20 text-secondary text-xs font-bold px-sm py-1 rounded-full">FRIDAY</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Youth Split Night</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">3rd Friday — Youth In Action split night with activities and fellowship.</p>
+<div class="flex items-center gap-xs mt-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">access_time</span>
+<span class="font-body-md text-body-md">7:30 PM</span>
+</div>
+<div class="flex items-center gap-xs mt-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">videocam</span>
+<span class="font-body-md text-body-md">Online</span>
+</div>
+</div>
+</div>
+
+</div>
+<div class="mt-lg text-center">
+<a href="https://portmoregospelassembly.com/subscribe" target="_blank" class="inline-flex items-center gap-2 text-primary font-label-md nav-link">
+VIEW FULL CALENDAR
+<span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ============ MEETINGS / SCHEDULE SECTION ============ -->
+<section id="meetings" class="bg-surface-container-low py-xl scroll-reveal">
+<div class="max-w-container-max mx-auto px-6 md:px-xl">
+<span class="section-accent"></span>
+<p class="font-label-md text-label-md text-primary uppercase tracking-wider mb-xs">Weekly Schedule</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-lg">Our Meetings</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-md">
+
+<div class="bg-surface-bright rounded-xl shadow-sm overflow-hidden border-t-4 border-primary">
+<div class="p-md">
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-primary">church</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Worship Services</h3>
+</div>
+<span class="inline-block px-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-xs mb-sm">SUNDAY</span>
+<ul class="space-y-xs">
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">access_time</span>
+7:30 AM - Worship Service
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">groups</span>
+Men's Fellowship (Virtual)
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">groups</span>
+Women's Fellowship (Virtual)
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">bread_slice</span>
+Communion (3rd Sundays)
+</li>
+</ul>
+<div class="mt-sm flex gap-xs">
+<span class="px-sm py-1 rounded-full bg-primary/10 text-primary font-label-md text-xs">IN-PERSON</span>
+<a href="https://www.youtube.com/@PortmoreGospelAssembly" class="px-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-xs">ONLINE</a>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-bright rounded-xl shadow-sm overflow-hidden border-t-4 border-secondary">
+<div class="p-md">
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-primary">menu_book</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Sunday School</h3>
+</div>
+<span class="inline-block px-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-xs mb-sm">SUNDAY</span>
+<ul class="space-y-xs">
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">access_time</span>
+10:00 AM
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">family_restroom</span>
+For all ages
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">auto_stories</span>
+Community Bible Study
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">forum</span>
+Life discussions
+</li>
+</ul>
+<div class="mt-sm">
+<span class="px-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-xs">VIRTUAL</span>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-bright rounded-xl shadow-sm overflow-hidden border-t-4 border-primary">
+<div class="p-md">
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Bible Study &amp; Prayer</h3>
+</div>
+<span class="inline-block px-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-xs mb-sm">TUESDAY</span>
+<ul class="space-y-xs">
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">access_time</span>
+7:30 PM
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">menu_book</span>
+Bible Study
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">flag</span>
+Prayer Points
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">nights_stay</span>
+Prayer Night (1st Tuesdays)
+</li>
+</ul>
+<div class="mt-sm">
+<span class="px-sm py-1 rounded-full bg-primary/10 text-primary font-label-md text-xs">ONLINE</span>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-bright rounded-xl shadow-sm overflow-hidden border-t-4 border-secondary">
+<div class="p-md">
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-primary">self_improvement</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Prayer &amp; Fasting</h3>
+</div>
+<span class="inline-block px-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-xs mb-sm">WEDNESDAY</span>
+<ul class="space-y-xs">
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">access_time</span>
+10:00 AM
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">restaurant</span>
+Fasting
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">favorite</span>
+Prayer
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">music_note</span>
+Praise &amp; Worship
+</li>
+</ul>
+<div class="mt-sm">
+<span class="px-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-xs">VIRTUAL</span>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-bright rounded-xl shadow-sm overflow-hidden border-t-4 border-primary">
+<div class="p-md">
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-primary">diversity_3</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Community Bible Study</h3>
+</div>
+<span class="inline-block px-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-xs mb-sm">THURSDAY</span>
+<ul class="space-y-xs">
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">access_time</span>
+7:30 PM
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">menu_book</span>
+Bible Study
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">psychology</span>
+Deep Discussions
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">help_outline</span>
+Scripture Q&amp;A
+</li>
+</ul>
+<div class="mt-sm">
+<span class="px-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-xs">VIRTUAL</span>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-bright rounded-xl shadow-sm overflow-hidden border-t-4 border-secondary">
+<div class="p-md">
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-primary">flash_on</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Youth In Action</h3>
+</div>
+<span class="inline-block px-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-xs mb-sm">FRIDAY</span>
+<ul class="space-y-xs">
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">access_time</span>
+7:30 PM
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">trending_up</span>
+Youth Focus
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">sports_esports</span>
+Activities
+</li>
+<li class="flex items-center gap-xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">event</span>
+Split Night (3rd Fridays)
+</li>
+</ul>
+<div class="mt-sm">
+<span class="px-sm py-1 rounded-full bg-primary/10 text-primary font-label-md text-xs">ONLINE</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ============ VERSE OF THE DAY ============ -->
+<section class="bg-surface py-xl scroll-reveal">
+<div class="max-w-container-max mx-auto px-6 md:px-xl">
+<div class="bg-primary-fixed rounded-2xl p-xl text-center">
+<span class="material-symbols-outlined text-primary mb-sm" style="font-size: 40px;">auto_awesome</span>
+<p class="font-headline-lg text-headline-lg text-on-surface italic mb-sm" id="verseText">"But those who hope in the Lord will renew their strength. They will soar on wings like eagles."</p>
+<p class="font-label-md text-label-md text-primary" id="verseRef">— Isaiah 40:31</p>
+</div>
+</div>
+</section>
+
+<!-- ============ PRAYER REQUEST SECTION ============ -->
+<section class="bg-primary-fixed py-xl scroll-reveal">
+<div class="max-w-container-max mx-auto px-6 md:px-xl text-center">
+<span class="material-symbols-outlined text-primary mb-sm" style="font-size: 40px;">favorite</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Submit a Prayer Request</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-sm max-w-2xl mx-auto">Our prayer team is standing by. Send your request and we will pray with you.</p>
+<form class="mt-lg space-y-sm text-left max-w-lg mx-auto" onsubmit="event.preventDefault(); window.open('https://wa.me/18765783069?text=' + encodeURIComponent('Prayer Request from ' + document.getElementById('prayerName').value + ': ' + document.getElementById('prayerRequest').value), '_blank');">
+<input type="text" id="prayerName" placeholder="Your Name" class="w-full px-md py-3 rounded-lg bg-surface-bright border border-outline-variant text-on-surface focus:outline-none focus:border-primary transition-colors" required/>
+<input type="email" id="prayerEmail" placeholder="Email (optional)" class="w-full px-md py-3 rounded-lg bg-surface-bright border border-outline-variant text-on-surface focus:outline-none focus:border-primary transition-colors"/>
+<textarea id="prayerRequest" rows="3" placeholder="Your prayer request..." class="w-full px-md py-3 rounded-lg bg-surface-bright border border-outline-variant text-on-surface focus:outline-none focus:border-primary transition-colors resize-none" required></textarea>
+<button type="submit" class="w-full sm:w-auto bg-primary text-white font-label-md px-lg py-3 rounded-lg hover:shadow-lg transition-all flex items-center justify-center gap-2 mx-auto">
+<span class="material-symbols-outlined">send</span>
+SEND VIA WHATSAPP
+</button>
+</form>
+</div>
+</section>
+
+<!-- ============ GALLERY SECTION ============ -->
+<section class="bg-surface-container-low py-xl scroll-reveal">
+<div class="max-w-container-max mx-auto px-6 md:px-xl">
+<span class="section-accent"></span>
+<p class="font-label-md text-label-md text-primary uppercase tracking-wider mb-xs">Gallery</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-lg">Life at PGA</h2>
+<div class="flex gap-md overflow-x-auto scrollbar-hide pb-sm">
+<div class="flex-shrink-0 w-64 h-48 rounded-xl bg-cover bg-center shadow-md cursor-pointer hover:shadow-lg transition-shadow" style="background-image: url('/mens-fellowship.jpg')"></div>
+<div class="flex-shrink-0 w-64 h-48 rounded-xl bg-cover bg-center shadow-md cursor-pointer hover:shadow-lg transition-shadow" style="background-image: url('/prayer-hands.jpg')"></div>
+<div class="flex-shrink-0 w-64 h-48 rounded-xl bg-cover bg-center shadow-md cursor-pointer hover:shadow-lg transition-shadow" style="background-image: url('/community.jpg')"></div>
+<div class="flex-shrink-0 w-64 h-48 rounded-xl bg-cover bg-center shadow-md cursor-pointer hover:shadow-lg transition-shadow" style="background-image: url('/church-building.jpg')"></div>
+</div>
+<a href="https://www.facebook.com/pg/PGAChurch/photos/?tab=album&album_id=3824087404272230" target="_blank" class="inline-flex items-center gap-2 mt-lg text-primary font-label-md nav-link">
+VIEW ALL PHOTOS ON FACEBOOK
+<span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+</a>
+</div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact" class="bg-surface-container-high border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-6 md:px-xl py-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg mb-lg">
+<div>
+<div class="flex items-center gap-sm mb-sm">
+<svg width="36" height="36" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#193c9d" stroke="#ffc641" stroke-width="2"/><path d="M12 14 L12 28 M12 14 Q16 12 20 14 Q24 16 28 14 L28 28" stroke="#ffc641" stroke-width="2.5" fill="none" stroke-linecap="round"/><text x="20" y="35" text-anchor="middle" font-size="6" fill="#ffc641" font-weight="bold" font-family="Work Sans">PGA</text></svg>
+<h3 class="font-headline-md text-headline-md text-primary">Portmore Gospel Assembly</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Rooted in tradition, growing in grace, and reaching out to the world.</p>
+<div class="mt-md space-y-xs">
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">location_on</span>
+<span>Portmore, St. Catherine, Jamaica</span>
+</div>
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">call</span>
+<a href="tel:+187****3091" class="hover:text-primary transition-colors">(876) 939-3091</a>
+</div>
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">sms</span>
+<a href="https://wa.me/18765783069" class="hover:text-primary transition-colors">WhatsApp: (876) 578-3069</a>
+</div>
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">schedule</span>
+<span>Sunday Worship 7:30 AM</span>
+</div>
+</div>
+<!-- Real Brand Social Icons -->
+<div class="flex gap-sm mt-md">
+<a href="https://www.facebook.com/PGAChurch" target="_blank" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-[#1877f2] transition-all group" title="Facebook">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-primary group-hover:text-white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+</a>
+<a href="https://www.youtube.com/@PortmoreGospelAssembly" target="_blank" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-[#ff0000] transition-all group" title="YouTube">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-primary group-hover:text-white"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+</a>
+<a href="https://soundcloud.com/user-524924797" target="_blank" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-[#ff5500] transition-all group" title="SoundCloud">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-primary group-hover:text-white"><path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m1.414-.42c-.061 0-.108.05-.114.117l-.214 2.563.229 2.459c.006.06.053.11.114.11.06 0 .105-.05.114-.11l.24-2.46-.24-2.553c-.009-.075-.054-.12-.114-.12m1.49-.314c-.075 0-.135.06-.143.135l-.195 2.46.21 2.445c.008.067.068.127.143.127.075 0 .135-.06.143-.127l.225-2.445-.21-2.46c-.008-.075-.068-.135-.143-.135m1.515.09c-.075 0-.135.06-.143.135l-.21 2.37.21 2.445c.008.067.068.127.143.127.075 0 .135-.06.143-.127l.24-2.445-.24-2.37c-.008-.075-.068-.135-.143-.135m1.53-.42c-.083 0-.151.068-.159.151l-.18 2.744.18 2.355c.008.083.076.151.159.151s.151-.068.151-.151l.21-2.355-.21-2.744c0-.083-.068-.151-.151-.151m1.575-.09c-.09 0-.158.068-.166.158l-.165 2.43.166 2.34c.008.09.075.158.165.158s.159-.068.166-.158l.18-2.34-.18-2.43c-.007-.09-.075-.158-.166-.158m1.605.27c-.09 0-.166.075-.166.166l-.15 2.04.15 2.34c.008.09.075.166.166.166.09 0 .165-.075.165-.166l.18-2.34-.18-2.04c-.008-.09-.075-.166-.165-.166m1.605-.585c-.09 0-.18.075-.18.18l-.135 2.595.135 2.34c.008.09.075.166.166.166.09 0 .165-.075.165-.166l.165-2.34-.165-2.595c0-.105-.075-.18-.165-.18m1.59-.345c-.09 0-.165.075-.165.165l-.165 2.58.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.58c0-.09-.075-.165-.165-.165m1.605.255c-.09 0-.165.075-.165.165l-.165 2.43.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.43c0-.09-.075-.165-.165-.165m1.605-.09c-.09 0-.165.075-.165.165l-.165 2.355.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.355c0-.09-.075-.165-.165-.165m1.605.18c-.09 0-.165.075-.165.165l-.165 2.295.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.295c0-.09-.075-.165-.165-.165m1.605-.255c-.09 0-.165.075-.165.165l-.165 2.385.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.385c0-.09-.075-.165-.165-.165m1.605-.09c-.09 0-.165.075-.165.165l-.165 2.355.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.355c0-.09-.075-.165-.165-.165m1.605.255c-.09 0-.165.075-.165.165l-.165 2.295.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.295c0-.09-.075-.165-.165-.165m1.605-.345c-.09 0-.165.075-.165.165l-.165 2.505.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.505c0-.09-.075-.165-.165-.165m1.605.165c-.09 0-.165.075-.165.165l-.165 2.43.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.43c0-.09-.075-.165-.165-.165m1.605-.165c-.09 0-.165.075-.165.165l-.165 2.43.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.43c0-.09-.075-.165-.165-.165m1.605.09c-.09 0-.165.075-.165.165l-.165 2.355.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.355c0-.09-.075-.165-.165-.165m1.605-.255c-.09 0-.165.075-.165.165l-.165 2.385.165 2.34c.008.09.075.165.165.165.09 0 .165-.075.165-.165l.18-2.34-.18-2.385c0-.09-.075-.165-.165-.165"/></svg>
+</a>
+<a href="https://twitter.com/pgachurch" target="_blank" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-black transition-all group" title="Twitter/X">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="text-primary group-hover:text-white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+</a>
+<a href="https://feeds.soundcloud.com/users/soundcloud:users:361430807/sounds.rss" target="_blank" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-[#ffa500] transition-all group" title="RSS">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-primary group-hover:text-white"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20A2.18 2.18 0 0 1 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-sm">Quick Links</h4>
+<ul class="space-y-xs">
+<li><a href="#about" class="text-on-surface-variant hover:text-primary transition-all">About Us</a></li>
+<li><a href="#sermons" class="text-on-surface-variant hover:text-primary transition-all">Sermons</a></li>
+<li><a href="#meetings" class="text-on-surface-variant hover:text-primary transition-all">Meetings</a></li>
+<li><a href="#events" class="text-on-surface-variant hover:text-primary transition-all">Events</a></li>
+<li><a href="https://portmoregospelassembly.com/subscribe" class="text-on-surface-variant hover:text-primary transition-all">Newsletter</a></li>
+<li><a href="#contact" class="text-on-surface-variant hover:text-primary transition-all">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-sm">Engage</h4>
+<ul class="space-y-xs">
+<li><a href="https://portmoregospelassembly.com/tithe" class="text-on-surface-variant hover:text-primary transition-all">Giving</a></li>
+<li><a href="https://portmoregospelassembly.com/counselling" class="text-on-surface-variant hover:text-primary transition-all">Counselling</a></li>
+<li><a href="https://wa.me/18765783069?text=I%20have%20a%20prayer%20request" class="text-on-surface-variant hover:text-primary transition-all">Prayer Request</a></li>
+<li><a href="https://portmoregospelassembly.com/fasting" class="text-on-surface-variant hover:text-primary transition-all">Fasting &amp; Prayer</a></li>
+<li><a href="https://vote.portmoregospelassembly.com/" class="text-on-surface-variant hover:text-primary transition-all">Member Vote</a></li>
+<li><a href="https://www.agachurches.com/" class="text-on-surface-variant hover:text-primary transition-all">AGA Churches</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-sm">Service Times</h4>
+<ul class="space-y-xs">
+<li class="text-on-surface-variant"><span class="font-semibold text-on-surface">Sunday:</span> 7:30 AM Worship</li>
+<li class="text-on-surface-variant"><span class="font-semibold text-on-surface">Sunday:</span> 10:00 AM School</li>
+<li class="text-on-surface-variant"><span class="font-semibold text-on-surface">Tuesday:</span> 7:30 PM Bible Study</li>
+<li class="text-on-surface-variant"><span class="font-semibold text-on-surface">Wednesday:</span> 10:00 AM Prayer</li>
+<li class="text-on-surface-variant"><span class="font-semibold text-on-surface">Friday:</span> 7:30 PM Youth</li>
+</ul>
+</div>
+</div>
+<div class="pt-lg border-t border-outline-variant text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2026 Portmore Gospel Assembly. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/18765783069" target="_blank" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-[#25D366] shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.608.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+    // Mobile menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
+    if (closeMobileMenu) closeMobileMenu.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('shadow-md');
+        } else {
+            navbar.classList.remove('shadow-md');
+        }
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+    // Verse of the Day
+    const verses = [
+        { text: "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.", ref: "Jeremiah 29:11" },
+        { text: "Trust in the Lord with all your heart and lean not on your own understanding.", ref: "Proverbs 3:5" },
+        { text: "I can do all things through Christ who strengthens me.", ref: "Philippians 4:13" },
+        { text: "The Lord is my shepherd; I shall not want.", ref: "Psalm 23:1" },
+        { text: "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.", ref: "Joshua 1:9" },
+        { text: "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.", ref: "John 3:16" },
+        { text: "Draw near to God and He will draw near to you.", ref: "James 4:8" },
+        { text: "The Lord is close to the brokenhearted and saves those who are crushed in spirit.", ref: "Psalm 34:18" },
+        { text: "Commit to the Lord whatever you do, and he will establish your plans.", ref: "Proverbs 16:3" },
+        { text: "But those who hope in the Lord will renew their strength. They will soar on wings like eagles.", ref: "Isaiah 40:31" },
+        { text: "Let everything that has breath praise the Lord.", ref: "Psalm 150:6" },
+        { text: "Rejoice in the Lord always. I will say it again: Rejoice!", ref: "Philippians 4:4" }
+    ];
+    const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
+    const todayVerse = verses[dayOfYear % verses.length];
+    const verseTextEl = document.getElementById('verseText');
+    const verseRefEl = document.getElementById('verseRef');
+    if (verseTextEl) verseTextEl.textContent = '"' + todayVerse.text + '"';
+    if (verseRefEl) verseRefEl.textContent = '\u2014 ' + todayVerse.ref;
+</script>
+</body>
+</html>
